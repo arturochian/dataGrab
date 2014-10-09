@@ -2,6 +2,7 @@ source("R files/grab_funs.R")
 
 date <- 20140930
 date <- 20130101
+date <- 20130923
 
 system.time({
   shfe <- shfe_grab(date)
@@ -10,12 +11,4 @@ system.time({
   cffex <- cffex_grab(date)
 })
 
-head(shfe, 1)
-names(shfe)
 
-head(dce, 10)
-names(dce)
-
-head(czce, 10)
-
-head(cffex)
